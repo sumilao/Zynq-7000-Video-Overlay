@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 26 18:17:14 2019
+# Process ID: 10120
+# Current directory: D:/xilinx/pynq4cv/video_overlay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5600 D:\xilinx\pynq4cv\video_overlay\video_overlay.xpr
+# Log file: D:/xilinx/pynq4cv/video_overlay/vivado.log
+# Journal file: D:/xilinx/pynq4cv/video_overlay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx/pynq4cv/video_overlay/video_overlay.xpr
+update_compile_order -fileset sources_1
+file copy -force D:/xilinx/pynq4cv/video_overlay/video_overlay.runs/impl_1/system_wrapper.sysdef D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk -hwspec D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk/system_wrapper.hdf
+file mkdir D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk
+file copy -force D:/xilinx/pynq4cv/video_overlay/video_overlay.runs/impl_1/system_wrapper.sysdef D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk -hwspec D:/xilinx/pynq4cv/video_overlay/video_overlay.sdk/system_wrapper.hdf
+file copy -force D:/xilinx/pynq4cv/video_overlay/video_overlay.runs/impl_1/system_wrapper.bit D:/xilinx/pynq4cv/prebuilts/system.bit
+open_bd_design {D:/xilinx/pynq4cv/video_overlay/video_overlay.srcs/sources_1/bd/system/system.bd}
+write_bd_tcl -force D:/xilinx/pynq4cv/video_overlay/system.tcl
+regenerate_bd_layout
+reset_project
+save_bd_design

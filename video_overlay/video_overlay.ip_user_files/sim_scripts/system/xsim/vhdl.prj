@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_rst_clk_wiz_0_150M_0/sim/system_rst_clk_wiz_0_150M_0.vhd" \
+"../../../bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/sim/bd_8422_psr_aclk_0.vhd" \
+"../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+"../../../bd/system/ip/system_axi_intc_0_0/sim/system_axi_intc_0_0.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk_S00_AXI.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk.vhd" \
+"../../../bd/system/ip/system_axi_dynclk_0_0/sim/system_axi_dynclk_0_0.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/ClockGen.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsync.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsyncReset.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/DVI_Constants.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/OutputSERDES.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/TMDS_Encoder.vhd" \
+"../../../../video_overlay.srcs/sources_1/bd/system/ipshared/bd5a/src/rgb2dvi.vhd" \
+"../../../bd/system/ip/system_rgb2dvi_0_0/sim/system_rgb2dvi_0_0.vhd" \
+"../../../bd/system/ip/system_v_tc_0_0/sim/system_v_tc_0_0.vhd" \
+"../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" \
+
+nosort

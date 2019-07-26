@@ -1,0 +1,34 @@
+18:26:08 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:14:0:
+../../display_bsp/ps7_cortexa9_0/include/xdebug.h:8:2: warning: #warning DEBUG is enabled [-Wcpp]
+ #warning DEBUG is enabled
+  ^~~~~~~
+../src/main.c: In function 'XIicPsInit':
+../../display_bsp/ps7_cortexa9_0/include/xdebug.h:21:86: warning: 'Status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define xdbg_printf(type, ...) (((type) & xdbg_current_types) ? printf (__VA_ARGS__) : 0)
+                                                                                      ^
+../src/main.c:201:6: note: 'Status' was declared here
+  int Status;
+      ^~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/dynclk/dynclk.o  ./src/display_ctrl/dynclk_ctrl.o ./src/display_ctrl/vtc_ctrl.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111656	   3656	  23344	 138656	  21da0	display.elf
+'Finished building: display.elf.size'
+' '
+
+18:26:09 Build Finished (took 763ms)
+

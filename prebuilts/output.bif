@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\xilinx\pynq4cv\video_overlay\video_overlay.sdk\zynq_fsbl\Debug\zynq_fsbl.elf
+	D:\xilinx\pynq4cv\prebuilts\system.bit
+	D:\xilinx\pynq4cv\video_overlay\video_overlay.sdk\display\Debug\display.elf
+}
