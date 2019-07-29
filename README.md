@@ -42,11 +42,11 @@ fps视频进行实时的处理显示。
 ![processing_bd](images/processing_bd.png)
 
 ## 使用指南
-1. 在 *prebuilt* 提供制作好的 *BOOT.bin* 的启动文件，配置好硬件之后，将 *BOOT.bin* 拷贝至SD卡中即可运行。
-2. 也可以使用 *Vivado 2018.2* 打开工程，生成bitstream，在SDK中运行程序。
+1. 在`prebuilt`提供制作好的`BOOT.bin`的启动文件，配置好硬件之后，将`BOOT.bin`拷贝至SD卡中即可运行。
+2. 也可以使用 `Vivado 2018.2` 打开工程，生成bitstream，在SDK中运行程序。
 
 ## 运行效果
-运行效果可以参考*result.mp4*。
+运行效果可以参考`result.mp4`。
 
 ## 参考资料
 1. [PYNQ-Z2 Base Overlay](https://pynq.readthedocs.io/en/latest/pynq_overlays/pynqz2/pynqz2_base_overlay.html)
@@ -54,3 +54,6 @@ fps视频进行实时的处理显示。
 2. [cv2pynq](https://github.com/wbrueckner/cv2pynq)
 
 ## TODO
+
+## Acknowledgement
+[Xilinx University Program Shanghai@xupsh](https://github.com/xupsh)
